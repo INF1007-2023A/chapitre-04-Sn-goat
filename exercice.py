@@ -2,24 +2,35 @@
 # -*- coding: utf-8 -*-
 
 
-def is_even_len(string: str) -> bool:
-    pass
+def is_even_len(Mot):
+    number_of_letter = len(Mot)
+    even = number_of_letter % 2
+    is_even = even == 0
+    return is_even
 
 
-def remove_third_char(string: str) -> str:
-    pass
-
+def remove_third_char(word):
+    new_word = word[:2] + word[3:]
+    return new_word
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    pass
+    word_mot = string
+    replace_mot = word_mot.replace(old_char, new_char)
+    return replace_mot
 
 
 def get_number_of_char(string: str, char: str) -> int:
-    pass
+    word = ""
+    for mot in string:
+        if char == mot:
+            word += mot
+    return len(word)
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
-    pass
+    new_sentence = sentence
+    number_of_words = new_sentence.count(word)
+    return number_of_words
 
 
 def main() -> None:
