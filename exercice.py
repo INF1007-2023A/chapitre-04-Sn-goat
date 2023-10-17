@@ -4,9 +4,8 @@
 
 def is_even_len(Mot):
     number_of_letter = len(Mot)
-    even = number_of_letter % 2
-    is_even = even == 0
-    return is_even
+    even = number_of_letter % 2 == 0
+    return even
 
 
 def remove_third_char(word):
